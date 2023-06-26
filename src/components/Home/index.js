@@ -13,7 +13,7 @@ const Home = props => {
       <div>
         <img
           src="https://assets.ccbp.in/frontend/react-js/ebank-logo-img.png"
-          alt="website login"
+          alt="website logo"
           className="home-logo"
         />
         <button

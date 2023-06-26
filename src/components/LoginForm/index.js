@@ -36,11 +36,11 @@ class LoginForm extends Component {
     const {userIdInput, userPinInput} = this.state
     const userDetails = {userIdInput, userPinInput}
     const url = 'https://apis.ccbp.in/ebank/login'
-    const options = {
+    const option = {
       method: 'POST',
       body: JSON.stringify(userDetails),
     }
-    const response = await fetch(url, options)
+    const response = await fetch(url, option)
     const data = await response.json()
     if (response.ok) {
       this.onSubmitSuccess(data.jwt_token)
